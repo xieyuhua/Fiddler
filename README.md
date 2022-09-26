@@ -17,9 +17,20 @@ supervisord
 
 绿色单文件封装
 
-
+MySQLMonitor.jar
+ 
 ```
 java -jar MySQLMonitor.jar -h 192.168.2.6 -p 3307 -user root - pass root
+```
+
+go-oss-buckup 备份或者同步 当前images目录文件到oss对象存储
+
+```
+./go-oss-buckup --ak LTAI###Kk --as Z29AI###Kj5eY --bn BucketName --ep oss-cn-shanghai.aliyuncs.com --dir images --action list
+action: 
+  delete  删除
+  list    下载  prefix 不填写，则全部下载
+  uploadFile 上传  默认上传
 ```
 
 
