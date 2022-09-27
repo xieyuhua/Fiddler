@@ -33,5 +33,12 @@ action:
   uploadFile 上传  默认上传
 ```
 
+go-es-json 采集json格式文件或者管道数据进入es
+
+```
+tail -F ./demo.json | ./go-es-json -h http://127.0.0.1:9200 -i test -t type -id id -f ./json.log
+tail -F ./*.json | ./go-es-json -h http://127.0.0.1:9200 -i test -t type -id id
+./go-es-json -h http://127.0.0.1:92010 -i test -t type -id id -f ./json.txt
+```
 
 ![image](https://user-images.githubusercontent.com/29120060/173166176-8aee5f1f-d947-4d28-8774-f2665115d435.png)
